@@ -16,7 +16,7 @@ def digits(start: int = 0, num_digits: int = 100) -> str:
         "numberOfDigits": num_digits
     }
     
-    pi_cache = "pi.json"
+    pi_cache = Path(__file__).parent / "pi.json"
     
     if Path(pi_cache).exists() :
         with open(pi_cache, "r") as pi :
