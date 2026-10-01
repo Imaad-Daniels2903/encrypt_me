@@ -12,3 +12,6 @@ dependencies = ["requests"]
 
 [project.scripts]
 encryptme = "encrypt_me.main:main"
+
+[tool.setuptools.package-data]
+encrypt_me = ["pi.json"]
