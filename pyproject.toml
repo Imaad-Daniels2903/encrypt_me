@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "encrypt_me"
+version = "0.1.0"
+description = "Simple custom encryption"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["requests"]
+
+[project.scripts]
+encryptme = "encrypt_me.main:main"
